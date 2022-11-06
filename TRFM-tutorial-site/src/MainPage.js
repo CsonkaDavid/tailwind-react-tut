@@ -1,7 +1,7 @@
 import MainPageIntro from "./components/MainPageIntro";
 import SideBar from "./components/SideBar";
 
-function App() {
+function MainPage() {
   return (
     <div className='main-page w-screen h-screen bg-gray-900 m-0 p-0'>
       <table className='w-screen h-screen'>
@@ -31,4 +31,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainPage;
