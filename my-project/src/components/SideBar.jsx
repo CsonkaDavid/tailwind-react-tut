@@ -6,7 +6,7 @@ import './SideBar.css'
 
 function SideBar() {
   return (
-    <div className='fixed left-0 h-fit w-16 flex flex-col bg-transparent mt-[20vh] ml-20'>
+    <div className='fixed left-0 h-fit w-16 flex flex-col bg-transparent ml-10 mr-10'>
         <SideBarIcon icon={<FaReact size={26}/>} text='ReactJS' customClass='react-nav-icon'/>
         <SideBarIcon icon={<SiTailwindcss size={26}/>} text='TailwindCSS' customClass='tailwind-nav-icon'/>
         <SideBarIcon icon={<SiFramer size={26}/>} text='Framer Motion' customClass='framer-nav-icon'/>
@@ -23,7 +23,7 @@ function SideBarIcon({icon, text = 'tooltip', customClass}) {
             transition={{duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01]}}>
 
             <div className='sidebar-icon mt-auto mb-auto group'>
-                <div className={customClass}>
+                <div className={customClass + ' p-0 m-0 w-full h-full flex items-center justify-center rounded-full text-9xl'}>
                     {icon}
                 </div>
                 <span className='sidebar-tooltip group-hover:scale-100'>
