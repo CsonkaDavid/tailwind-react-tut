@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+    .sidebar-icon {
+        @apply relative flex items-center justify-center
+        h-12 w-12 mt-[10vh] mx-auto bg-transparent border-white border-solid border-[1px] text-white rounded-full
+        cursor-pointer p-0 transition-all hover:scale-[1.1]
+    }
+
+    .sidebar-tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-800 text-xs font-bold
+        transition-all duration-100 scale-0 origin-left pointer-events-none
+    }
+
+    .framer-nav-icon, .tailwind-nav-icon, .react-nav-icon {
+        @apply transition-all p-0 m-0 w-full h-full flex items-center justify-center rounded-full
+    }
+
+    .tailwind-nav-icon {
+        @apply  hover:text-blue-400
+    }
+
+    .framer-nav-icon {
+        @apply  hover:text-purple-500
+    }
+
+    .react-nav-icon {
+        @apply  hover:text-cyan-400
+    }
+}
