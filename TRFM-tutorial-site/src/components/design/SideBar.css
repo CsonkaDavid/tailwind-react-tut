@@ -1,11 +1,15 @@
 @tailwind components;
 
 @layer components {
-    .sidebar-icon {
+    .sidebar {
+        @apply fixed h-[100vh] flex flex-col bg-transparent mx-10 mt-[2em] items-center justify-center
+    }
+    
+    .sidebar-button {
         @apply relative flex items-center justify-center 
         scale-[1.1] h-12 w-12 
-        mt-[10vh] mx-auto 
         p-0
+        mb-[6em]
         bg-transparent
         text-white 
         rounded-full
@@ -15,30 +19,27 @@
 
     .sidebar-tooltip {
         @apply absolute 
-        w-auto min-w-max
-        p-2 
-        m-2  
+        w-auto min-w-max  
         left-14 
-        rounded-md shadow-md 
         text-white text-xs
         font-bold
         transition-all duration-100 origin-left scale-0 
         pointer-events-none
-    }
-
-    .framer-nav-icon, .tailwind-nav-icon, .react-nav-icon {
-        @apply transition-all 
-    }
-
-    .tailwind-nav-icon {
-        @apply  hover:text-blue-400
-    }
-
-    .framer-nav-icon {
-        @apply  hover:text-purple-500
+        shadow-md
+        shadow-slate-900
+        rounded-lg
+        bg-transparent
     }
 
     .react-nav-icon {
         @apply  hover:text-cyan-400
     }
+
+    .tailwind-nav-icon {
+        @apply  hover:text-blue-400  
+    }
+
+    .framer-nav-icon {
+        @apply  hover:text-purple-500  
+    }  
 }
