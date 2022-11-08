@@ -1,4 +1,3 @@
-import React from 'react'
 import {SiTailwindcss} from 'react-icons/si'
 
 function TailwindIntro() {

@@ -1,4 +1,3 @@
-import React from 'react'
 import {FaReact} from 'react-icons/fa'
 
 function ReactJSIntro() {
@@ -9,7 +8,9 @@ function ReactJSIntro() {
                 <FaReact size={40}/>
             </div>
             <div>
-                React JS 
+                <p>React JS</p> 
+                <p></p>
+                <p></p>
             </div> 
         </p>
     </div>

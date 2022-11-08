@@ -1,35 +1,33 @@
 import MainPageIntro from "./MainPageIntro";
 import NavigationBar from "./NavigationBar";
-import {SideBar} from "./SideBar";
+import { SideBar } from "./SideBar";
 import TechnologiesIntro from "./TechnologiesIntro";
 import MainPageTitle from "./Titles";
 
 function MainPage() {
   return (
-    <div className='main-page w-[100vw] h-[100vh] bg-gradient-to-b from-gray-900 to-gray-800  m-0 p-0'>
-      <MainPageTitle/>
+    <div className='main-page h-screen w-screen bg-gradient-to-b from-gray-900 to-gray-800 m-0 p-0'>
+      <MainPageTitle />
       <table>
         <tr>
           <td className='flex'>
-            <div>
-              <SideBar/>
-            </div>
+            <SideBar />
           </td>
           <td className='text-white'>
-            <table className='ml-[300px]'>
+            <table>
               <tr>
                 <td>
-                  <NavigationBar/>
+                  <NavigationBar />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <MainPageIntro/>
+                  <MainPageIntro />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <TechnologiesIntro/>
+                  <TechnologiesIntro />
                 </td>
               </tr>
             </table>

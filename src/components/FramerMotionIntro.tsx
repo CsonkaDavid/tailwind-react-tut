@@ -1,4 +1,3 @@
-import React from 'react'
 import {SiFramer} from 'react-icons/si'
 
 function FramerMotionIntro() {
