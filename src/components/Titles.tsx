@@ -1,13 +1,11 @@
 import { useEffect } from 'react'
 
-export function MainPageTitle() {
+export function TitleComponent({ title }: { title: string }) {
   return (
     <>
       {useEffect(() => {
-          document.title = 'TRFM-Main'
+        document.title = title
       })}
     </>
   );
 }
-
-export default MainPageTitle

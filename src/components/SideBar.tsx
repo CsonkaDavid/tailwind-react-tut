@@ -7,21 +7,23 @@ import './design/SideBar.css'
 export function SideBar() {
     return (
         <div className='sidebar'>
-            <SideBarIcon
-                icon={<FaReact size={26} />} text='React' customClass='react-nav-icon' />
-            <SideBarIcon icon={<SiTailwindcss size={26} />} text='Tailwind' customClass='tailwind-nav-icon' />
-            <SideBarIcon icon={<SiFramer size={26} />} text='Framer Motion' customClass='framer-nav-icon' />
-            <SideBarIcon icon={<SiVite size={26} />} text='Vite' customClass='vite-nav-icon' />
+            <SideBarIcon icon={<FaReact size={26} />} text='React' animationDelay={0.7} customClass='react-nav-icon' />
+            <SideBarIcon icon={<SiTailwindcss size={26} />} text='Tailwind' animationDelay={0.8} customClass='tailwind-nav-icon' />
+            <SideBarIcon icon={<SiFramer size={26} />} text='Framer Motion' animationDelay={0.9} customClass='framer-nav-icon' />
+            <SideBarIcon icon={<SiVite size={26} />} text='Vite' animationDelay={1} customClass='vite-nav-icon' />
         </div>
     )
 }
 
-export function SideBarIcon({ icon, text = 'tooltip', customClass }: { icon: ReactElement, text: string, customClass: string }) {
+export function SideBarIcon(
+    { icon, text = 'tooltip', animationDelay, customClass }:
+        { icon: ReactElement, text: string, animationDelay: number, customClass: string }) {
+
     return (
         <motion.div
-            initial={{ opacity: 0, scale: 0.1 }}
+            initial={{ opacity: 0, scale: 0.3 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.4, ease: [0, 0.71, 0.2, 1.01] }}>
+            transition={{ duration: 2, delay: animationDelay, ease: [0, 0.71, 0.2, 1.01] }}>
 
             <div className='sidebar-button group'>
                 <div className={customClass + ' p-0 m-0 w-full h-full flex items-center justify-center rounded-full text-9xl'}>

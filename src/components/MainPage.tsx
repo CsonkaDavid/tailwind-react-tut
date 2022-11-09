@@ -2,21 +2,20 @@ import MainPageIntro from "./MainPageIntro";
 import NavigationBar from "./NavigationBar";
 import { SideBar } from "./SideBar";
 import TechnologiesIntro from "./TechnologiesIntro";
-import MainPageTitle from "./Titles";
+import { TitleComponent } from "./Titles";
 
 function MainPage() {
   return (
-    <div className='main-page h-screen w-screen bg-gradient-to-b from-gray-900 to-gray-800 m-0 p-0'>
-      <MainPageTitle />
+    <div className='main-page h-[500vh] w-full bg-gradient-to-bl from-backgroundLight to-backgroundDark'>
       <table>
         <tr>
           <td className='flex'>
             <SideBar />
           </td>
-          <td className='text-white'>
-            <table>
+          <td className='text-white p-0 m-0'>
+            <table className='h-[100vh] m-0 p-0'>
               <tr>
-                <td>
+                <td className='p-0'>
                   <NavigationBar />
                 </td>
               </tr>
@@ -25,6 +24,8 @@ function MainPage() {
                   <MainPageIntro />
                 </td>
               </tr>
+            </table>
+            <table>
               <tr>
                 <td>
                   <TechnologiesIntro />
@@ -34,6 +35,7 @@ function MainPage() {
           </td>
         </tr>
       </table>
+      <TitleComponent title='TRFM-Main' />
     </div>
   );
 }

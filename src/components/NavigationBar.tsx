@@ -8,7 +8,7 @@ import { ReactElement } from 'react'
 
 function NavigationBar() {
   return (
-    <div className='text-gray-300 mt-[4vh] mb-[4vh] text-lg w-fit whitespace-nowrap ml-[14vw]'>
+    <div className='fixed flex flex-row justify-center text-gray-300 text-lg h-[4em] w-full whitespace-nowrap bg-navigationBackgroundColor'>
       <table>
         <tr className='w-full h-fit'>
           <td>
@@ -40,15 +40,15 @@ function NavigationButton({ label, icon, animationDelay }: { label: string, icon
     <motion.div
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4, delay: animationDelay, ease: [0, 0.71, 0.2, 1.01] }}>
+      transition={{ duration: 0.8, delay: animationDelay, ease: [0, 0.71, 0.2, 1.01] }}>
       <div className='w-fit'>
-        <div className='navigation-button group'>
+        <div className='w-fit mx-[2em] hover:text-white group'>
           <div>
-            <span className='navigation-icon group-hover:scale-100'>
+            <span className='navigation-icon text-white text-xs group-hover:scale-100'>
               {icon}
             </span>
           </div>
-          <div className='px-[1em]'>
+          <div className='px-[2em]'>
             <button className=' border-b-[0.1em] rounded-sm'>
               {label}
             </button>

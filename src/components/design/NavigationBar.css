@@ -1,21 +1,13 @@
 @tailwind components;
 
 @layer components {
-    .navigation-button {
-        @apply w-fit mx-[3em]  hover:text-white
-    }
-    
     .navigation-icon {
         @apply
         absolute
         scale-0
-        text-white text-xs
         font-bold
         transition-all duration-100 origin-right  
         pointer-events-none
-        shadow-md
-        shadow-slate-900
-        rounded-lg
         bg-transparent
     }
 

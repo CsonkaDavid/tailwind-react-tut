@@ -2,7 +2,7 @@
 
 @layer components {
     .sidebar {
-        @apply fixed h-[90vh] flex flex-col bg-transparent mx-[6vw] justify-center mt-[10vh]
+        @apply fixed h-[90vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[10vh]
     }
     
     .sidebar-button {
@@ -31,7 +31,7 @@
     }
 
     .react-nav-icon {
-        @apply  hover:text-cyan-400
+        @apply hover:text-cyan-400
     }
 
     .tailwind-nav-icon {
