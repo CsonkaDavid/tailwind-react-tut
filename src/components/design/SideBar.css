@@ -2,32 +2,29 @@
 
 @layer components {
     .sidebar {
-        @apply fixed h-[90vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[10vh]
+        @apply fixed h-[90vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[10vh] 
     }
     
     .sidebar-button {
         @apply relative flex items-center justify-center 
-        scale-[1.2]
+        scale-[1.4]
         h-fit
         my-[7vh]
         text-white 
         rounded-full
         cursor-pointer transition-all 
-        hover:scale-[1.8]
+        hover:scale-[1.7]
     }
 
     .sidebar-tooltip {
         @apply absolute 
-        w-auto min-w-max  
-        left-10 
-        text-white text-[10px]
+        w-max min-w-fit
+        left-10
+        text-white text-xs
         font-bold
         transition-all duration-100 origin-left scale-0 
         pointer-events-none
-        shadow-md
-        shadow-slate-900
-        rounded-lg
-        bg-transparent
+        text-center
     }
 
     .react-nav-icon {
