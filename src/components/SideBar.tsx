@@ -1,23 +1,24 @@
 import { motion } from 'framer-motion';
 import { ReactElement } from 'react';
 import { FaReact } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
 import { SiVite, SiTailwindcss, SiFramer } from 'react-icons/si';
 import './design/SideBar.css'
 
 export function SideBar() {
     return (
         <div className='sidebar'>
-            <SideBarIcon icon={<FaReact size={26} />} text='React' animationDelay={0.7} customClass='react-nav-icon' />
-            <SideBarIcon icon={<SiTailwindcss size={26} />} text='Tailwind' animationDelay={0.8} customClass='tailwind-nav-icon' />
-            <SideBarIcon icon={<SiFramer size={26} />} text='Framer Motion' animationDelay={0.9} customClass='framer-nav-icon' />
-            <SideBarIcon icon={<SiVite size={26} />} text='Vite' animationDelay={1} customClass='vite-nav-icon' />
+            <SideBarIcon icon={<FaReact size={26} />} tooltip='React' animationDelay={0.7} customClass='react-nav-icon' />
+            <SideBarIcon icon={<SiTailwindcss size={26} />} tooltip='Tailwind' animationDelay={0.8} customClass='tailwind-nav-icon' />
+            <SideBarIcon icon={<SiFramer size={26} />} tooltip='Framer Motion' animationDelay={0.9} customClass='framer-nav-icon' />
+            <SideBarIcon icon={<SiVite size={26} />} tooltip='Vite' animationDelay={1} customClass='vite-nav-icon' />
         </div>
     )
 }
 
-export function SideBarIcon(
-    { icon, text = 'tooltip', animationDelay, customClass }:
-        { icon: ReactElement, text: string, animationDelay: number, customClass: string }) {
+function SideBarIcon(
+    { icon, tooltip = 'tooltip', animationDelay, customClass }:
+        { icon: ReactElement, tooltip: string, animationDelay: number, customClass: string }) {
 
     return (
         <motion.div
@@ -30,7 +31,7 @@ export function SideBarIcon(
                     {icon}
                 </div>
                 <span className='sidebar-tooltip group-hover:scale-100'>
-                    {text}
+                    {tooltip}
                 </span>
             </div>
         </motion.div>

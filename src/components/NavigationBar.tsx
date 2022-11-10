@@ -8,7 +8,7 @@ import { ReactElement } from 'react'
 
 function NavigationBar() {
   return (
-    <div className='fixed flex flex-row justify-center text-gray-300 text-lg h-[4em] w-full whitespace-nowrap bg-navigationBackgroundColor'>
+    <div className='fixed flex flex-row justify-center text-gray-300 text-lg h-[4em] w-full whitespace-nowrap bg-navigationBackgroundColor z-50'>
       <table>
         <tr className='w-full h-fit'>
           <td>

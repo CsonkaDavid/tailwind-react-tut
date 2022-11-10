@@ -1,4 +1,5 @@
-import MainPageIntro from "./MainPageIntro";
+import { motion } from "framer-motion";
+import { MainPageIntro } from "./MainPageIntro";
 import NavigationBar from "./NavigationBar";
 import { SideBar } from "./SideBar";
 import TechnologiesIntro from "./TechnologiesIntro";
@@ -6,7 +7,7 @@ import { TitleComponent } from "./Titles";
 
 function MainPage() {
   return (
-    <div className='main-page h-[500vh] w-full bg-gradient-to-bl from-backgroundLight to-backgroundDark'>
+    <motion.div className='main-page h-[500vh] w-full bg-gradient-to-bl from-backgroundLight to-backgroundDark'>
       <table>
         <tr>
           <td className='flex'>
@@ -36,7 +37,7 @@ function MainPage() {
         </tr>
       </table>
       <TitleComponent title='TRFM-Main' />
-    </div>
+    </motion.div>
   );
 }
 

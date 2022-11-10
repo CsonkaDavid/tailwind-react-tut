@@ -2,7 +2,7 @@
 
 @layer components {
     .sidebar {
-        @apply fixed h-[90vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[10vh] 
+        @apply fixed h-[90vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[10vh] z-50
     }
     
     .sidebar-button {
@@ -10,10 +10,10 @@
         scale-[1.4]
         h-fit
         my-[7vh]
-        text-white 
         rounded-full
         cursor-pointer transition-all 
         hover:scale-[1.7]
+        text-white
     }
 
     .sidebar-tooltip {
