@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { ReactElement } from 'react';
 import { FaReact } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
 import { SiVite, SiTailwindcss, SiFramer } from 'react-icons/si';
 import './design/SideBar.css'
 
@@ -30,7 +29,7 @@ function SideBarIcon(
                 <div className={customClass + ' p-0 m-0 w-full h-full flex items-center justify-center rounded-full text-9xl'}>
                     {icon}
                 </div>
-                <span className='sidebar-tooltip group-hover:scale-100'>
+                <span className='sidebar-tooltip group-hover:scale-100 w-fit'>
                     {tooltip}
                 </span>
             </div>

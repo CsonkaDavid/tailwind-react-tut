@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+    .tech-intro {
+        @apply flex flex-row bg-white rounded-2xl w-[30em] text-slate-600 text-[2rem]
+    }
+
+    .tech-intro p {
+        @apply mb-10
+    }
+}

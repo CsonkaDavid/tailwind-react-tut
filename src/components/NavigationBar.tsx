@@ -49,7 +49,7 @@ function NavigationButton({ label, icon, animationDelay }: { label: string, icon
             </span>
           </div>
           <div className='px-[2em]'>
-            <button className=' border-b-[0.1em] rounded-sm'>
+            <button>
               {label}
             </button>
           </div>

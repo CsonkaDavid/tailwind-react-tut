@@ -5,7 +5,6 @@
         @apply
         absolute
         scale-0
-        font-bold
         transition-all duration-100 origin-right  
         pointer-events-none
         bg-transparent

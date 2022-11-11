@@ -2,7 +2,7 @@
 
 @layer components {
     .sidebar {
-        @apply fixed h-[90vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[10vh] z-50
+        @apply fixed h-[100vh] flex flex-col bg-transparent px-[6vw] justify-center mt-[5vh] z-50 
     }
     
     .sidebar-button {
