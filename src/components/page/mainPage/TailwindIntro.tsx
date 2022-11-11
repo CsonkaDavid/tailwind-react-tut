@@ -12,15 +12,16 @@ function TailwindIntro() {
           <div className='py-[1em] px-[1em]'>
             <p className='mr-[6.6em] text-[2em] text-blue-500 font-bold'>Tailwind</p>
             <p>A utility-first CSS framework that can be composed to build any design, directly in your markup.</p>
-            <p>Official documentation and tutorials can be found here:
+            <p>Official documentation and tutorials can be found here:</p>
+            <div className='w-fit text-[#0284c7] hover:text-[#60a5fa]'>
               <NoreferrerLink link={'https://tailwindcss.com/'}
                 nestedElement={
                   ' tailwindcss.com'
                 }
               />
-            </p>
+            </div>
           </div>
-          <div>
+          <div className='pt-[2vh]'>
             <GradientIcon startColor={'#60a5fa'} endColor={'#3b82f6'} gradientID={'tailwindicon'} offset='r'
               nestedElement={<SiTailwindcss size={'15em'} />} />
           </div>

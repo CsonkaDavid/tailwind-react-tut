@@ -15,14 +15,16 @@ function FramerMotionIntro() {
             <p>A production-ready motion library for React.</p>
             <p>Utilize the power behind Framer, the best prototyping tool for teams. Proudly open source.</p>
             <p>Official documentation and tutorials can be found here:
+            </p>
+            <div className='w-fit text-[#9333ea] hover:text-[#d946ef]'>
               <NoreferrerLink link={'https://www.framer.com/motion/'}
                 nestedElement={
                   ' framer.com/motion'
                 }
               />
-            </p>
+            </div>
           </div>
-          <div>
+          <div className='pt-[10vh]'>
             <GradientIcon startColor={'#c026d3'} endColor={'#7e22ce'} gradientID={'framericon'} offset='l'
               nestedElement={<SiFramer size={'15em'} />} />
           </div>

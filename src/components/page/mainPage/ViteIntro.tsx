@@ -12,15 +12,15 @@ function ViteIntro() {
                         <p className='mr-[8.3em] text-[2em] text-yellow-500 font-bold'>Vite</p>
                         <p>Next Generation Frontend Tooling</p>
                         <p>Get ready for a development environment that can finally catch up with you.</p>
-                        <p>Official documentation and tutorials can be found here:
+                        <p>Official documentation and tutorials can be found here:</p>
+                        <div className='w-fit text-[#f59e0b] hover:text-[#facc15]'>
                             <NoreferrerLink link={'https://vitejs.dev/'}
                                 nestedElement={
-                                    ' vitejs.dev'
-                                }
-                            />
-                        </p>
+                                    'vitejs.dev'
+                                } />
+                        </div>
                     </div>
-                    <div>
+                    <div className='pt-[5vh]'>
                         <GradientIcon startColor={'#fcd34d'} endColor={'#eab308'} gradientID={'viteicon'} offset='r'
                             nestedElement={<SiVite size={'15em'} />} />
                     </div>

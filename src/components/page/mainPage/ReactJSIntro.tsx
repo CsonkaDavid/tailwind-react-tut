@@ -10,18 +10,20 @@ function ReactJSIntro() {
       nestedElement={
         <div className='tech-intro'>
           <div className='py-[0.5em] px-[1em]'>
-            <p className='mr-[7.85em] text-[2em] text-cyan-500 font-bold'>React</p>
+            <p className='mr-[7.7em] text-[2em] text-cyan-500 font-bold'>React</p>
             <p>A JavaScript library for building user interfaces</p>
             <p>React is a component-based UI builder tool.</p>
             <p>Official documentation and tutorials can be found here:
+            </p>
+            <div className='w-fit text-[#06b6d4] hover:text-[#67e8f9]'>
               <NoreferrerLink link={'https://reactjs.org/'}
                 nestedElement={
                   ' reactjs.org'
                 }
               />
-            </p>
+            </div>
           </div>
-          <div>
+          <div className='pt-[3vh]'>
             <GradientIcon startColor={'#67e8f9'} endColor={'#0ea5e9'} gradientID={'reacticon'} offset='l'
               nestedElement={<FaReact size={'15em'} />} />
           </div>

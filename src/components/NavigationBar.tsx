@@ -5,6 +5,7 @@ import { SiVite, SiTailwindcss, SiFramer } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { ReactElement } from 'react'
+import NoreferrerLink from './NoreferrerLink'
 
 function NavigationBar() {
   return (
@@ -27,7 +28,8 @@ function NavigationBar() {
             <NavigationButton label='Vite' animationDelay={0.5} icon={<SiVite size={26} />} />
           </td>
           <td>
-            <NavigationButton label='Github' animationDelay={0.5} icon={<VscGithub size={26} />} />
+            <NoreferrerLink link={'https://github.com/CsonkaDavid/tailwind-react-tut'}
+              nestedElement={<NavigationButton label='Github' animationDelay={0.5} icon={<VscGithub size={26} />} />} />
           </td>
         </tr>
       </table>
