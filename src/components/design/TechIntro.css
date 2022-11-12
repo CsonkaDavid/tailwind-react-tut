@@ -2,7 +2,7 @@
 
 @layer components {
     .tech-intro {
-        @apply flex flex-row bg-white rounded-2xl w-[30em] text-slate-600 text-[2rem]
+        @apply flex flex-row bg-white rounded-2xl w-[60vw] text-slate-600 text-[2vw]
     }
 
     .tech-intro p {

@@ -2,10 +2,10 @@
 
 @layer components {
     .left-icon-intro {
-        @apply border-b-2 border-white mb-[35vh] pb-[15vh] pl-[15vw] scroll-mt-[30vh]
+        @apply   mb-[35vh] pb-[5vw] pl-[15vw]
     }
 
     .right-icon-intro {
-        @apply border-b-2 border-white mb-[35vh] pb-[15vh] pl-[5vw] scroll-mt-[28vh]
+        @apply  mb-[35vh] pb-[5vw] pl-[5vw] 
     }
 }
