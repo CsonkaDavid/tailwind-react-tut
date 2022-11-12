@@ -5,7 +5,7 @@ import SpringMotionDiv from '../../SpringMotionDiv'
 
 function ViteIntro() {
     return (
-        <SpringMotionDiv yOff={'45vh'} yOn={'-10vh'} duration={0.8} bounce={0.2} viewPortOnce={true}
+        <SpringMotionDiv yOff={'57vh'} yOn={'-10vh'} duration={0.8} bounce={0.2} viewPortOnce={true}
             nestedElement={
                 <div className='tech-intro flex-row-reverse'>
                     <div className='py-[0.5em] px-[1em]'>

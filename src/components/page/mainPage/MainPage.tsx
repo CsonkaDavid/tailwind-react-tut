@@ -12,7 +12,7 @@ import ViteIntro from "./ViteIntro";
 
 function MainPage() {
   return (
-    <motion.div className='main-page h-[680vh] w-full bg-gradient-to-bl from-backgroundLight to-backgroundDark'>
+    <motion.div id='main-page' className='main-page h-full w-full bg-gradient-to-bl from-backgroundLight to-backgroundDark'>
       <header className='p-0'>
         <TitleInjector title='TRFM-Main' />
         <NavigationBar />
@@ -20,24 +20,24 @@ function MainPage() {
       <aside>
         <SideBar />
       </aside>
-      <div className='pl-[15vw] pr-[5vw]'>
+      <div className='pl-[15vw] pr-[5vw] pb-[1vh]'>
         <section className='text-white pt-[20vh] border-b-2 border-white pl-[2vw]'>
           <MainPageIntro />
         </section>
         <section className='text-white border-b-2 border-white pt-[60vh]'>
           <TechnologiesIntro />
         </section>
-        <section className='pt-[30vh]'>
-          <article className='right-icon-intro'>
+        <section className='pt-[30vh]' >
+          <article className='right-icon-intro overflow-visible' id='reactJSIntro'>
             <ReactJSIntro />
           </article>
-          <article className='left-icon-intro'>
+          <article className='left-icon-intro' id='tailwindIntro'>
             <TailwindIntro />
           </article>
-          <article className='right-icon-intro'>
+          <article className='right-icon-intro' id='framerMotionIntro'>
             <FramerMotionIntro />
           </article>
-          <article className='left-icon-intro'>
+          <article className='left-icon-intro' id='viteIntro'>
             <ViteIntro />
           </article>
         </section>

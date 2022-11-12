@@ -7,7 +7,7 @@ import SpringMotionDiv from '../../SpringMotionDiv'
 
 function FramerMotionIntro() {
   return (
-    <SpringMotionDiv yOff={'45vh'} yOn={'-10vh'} duration={0.8} bounce={0.2} viewPortOnce={true}
+    <SpringMotionDiv yOff={'57vh'} yOn={'-10vh'} duration={0.8} bounce={0.2} viewPortOnce={true}
       nestedElement={
         <div className='tech-intro mr-[10vw]'>
           <div className='py-[0.5em] px-[1em]'>

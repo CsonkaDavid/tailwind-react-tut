@@ -6,11 +6,11 @@ import SpringMotionDiv from '../../SpringMotionDiv'
 
 function ReactJSIntro() {
   return (
-    <SpringMotionDiv yOff={'45vh'} yOn={'-10vh'} duration={0.8} bounce={0.2} viewPortOnce={true}
+    <SpringMotionDiv yOff={'58vh'} yOn={'-10vh'} duration={0.8} bounce={0.2} viewPortOnce={true}
       nestedElement={
         <div className='tech-intro'>
-          <div className='py-[0.5em] px-[1em]'>
-            <p className='mr-[7.7em] text-[2em] text-cyan-500 font-bold'>React</p>
+          <div className='py-[3vh] px-[2vw]'>
+            <p className='mr-[30.8vw] text-[4vw] text-cyan-500 font-bold'>React</p>
             <p>A JavaScript library for building user interfaces</p>
             <p>React is a component-based UI builder tool.</p>
             <p>Official documentation and tutorials can be found here:
